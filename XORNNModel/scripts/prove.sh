@@ -1,5 +1,6 @@
 ezkl prove \
--w artifacts/witness.json \
--m artifacts/model.compiled \
--p artifacts/pk.key \
--o artifacts/proof.json
+--witness artifacts/witness.json \
+--compiled-circuit artifacts/model.compiled \
+--pk-path artifacts/pk.key 
+
+mv proof.json artifacts/
